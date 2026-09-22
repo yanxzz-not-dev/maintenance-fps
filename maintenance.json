@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "app": {
+    "id": "zuax-fps",
+    "name": "ZUAX FPS",
+    "version": "1.0.0",
+    "environment": "production"
+  },
+  "enabled": false,
+  "status": "OFF",
+  "mode": "all_except_owner",
+  "title": "🛠️ APK SEDANG MAINTENANCE",
+  "message": "APK sedang dalam maintenance. Silakan coba kembali nanti.",
+  "reason": "Pemeliharaan sistem.",
+  "detail": "Beberapa atau seluruh fitur APK sementara tidak dapat digunakan.",
+  "announcement": "",
+  "maintenance_id": "ZX-MAINT-0001",
+  "progress": {
+    "enabled": false,
+    "percent": 0,
+    "label": "Dalam proses"
+  },
+  "schedule": {
+    "enabled": false,
+    "start_at": null,
+    "end_at": null,
+    "timezone": "Asia/Jakarta"
+  },
+  "estimated_end": null,
+  "show_countdown": false,
+  "emergency": false,
+  "block_login": true,
+  "block_features": true,
+  "allow_owner": true,
+  "allow_reseller": false,
+  "scope": {
+    "telegram_ids": [],
+    "account_usernames": [],
+    "exclude_telegram_ids": [],
+    "exclude_account_usernames": [],
+    "exclude_roles": [
+      "owner"
+    ]
+  },
+  "mode_guide": {
+    "all": "Semua akun terkena maintenance; owner tetap dikecualikan oleh allow_owner/exclude_roles.",
+    "all_except_owner": "Semua pengguna terkena maintenance kecuali owner.",
+    "selected": "Hanya target di scope yang terkena maintenance.",
+    "except_selected": "Semua pengguna terkena maintenance kecuali target di scope; owner tetap dikecualikan."
+  },
+  "version_policy": {
+    "minimum_supported": "1.0.0",
+    "latest": "1.0.0",
+    "update_required": false,
+    "update_url": ""
+  },
+  "offline_policy": {
+    "mode": "USE_LAST_KNOWN",
+    "allow_when_never_checked": true,
+    "max_cache_age_seconds": 21600,
+    "offline_message": "Tidak dapat memeriksa status maintenance. Status terakhir digunakan.",
+    "network_retry_seconds": 60
+  },
+  "behavior": {
+    "check_on_launch": true,
+    "check_on_resume": true,
+    "check_on_network_restore": true,
+    "refresh_seconds": 60,
+    "close_app_when_blocked": false,
+    "allow_retry_button": true,
+    "remember_last_state": true
+  },
+  "display": {
+    "show_reason": true,
+    "show_detail": true,
+    "show_announcement": true,
+    "show_eta": true,
+    "show_progress": true,
+    "show_maintenance_id": false,
+    "show_contact": true,
+    "theme": "maintenance"
+  },
+  "contact": {
+    "label": "CONTACT OWNER",
+    "username": "@AnosVlocticoal",
+    "url": "https://t.me/AnosVlocticoal"
+  },
+  "security": {
+    "https_only": true,
+    "reject_invalid_schema": false,
+    "max_message_length": 1000,
+    "do_not_store_tokens": true,
+    "owner_bypass": true
+  },
+  "notes": {
+    "github_source": "GitHub Raw HTTPS",
+    "domain_required": false,
+    "public_repo_required_for_apk": true,
+    "owner_rule": "Owner tidak terkena maintenance.",
+    "target_rule": "Untuk satu/beberapa akun gunakan mode=selected dan isi scope.telegram_ids atau scope.account_usernames.",
+    "offline_rule": "Saat offline, APK memakai status terakhir yang berhasil dibaca sampai max_cache_age_seconds."
+  }
+}
